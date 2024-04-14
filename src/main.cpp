@@ -5,21 +5,11 @@
 #include "timing.h"
 #include <omp.h>
 
-vector<string> names = {"a1a", "ijcnn1", 
-                        };
+vector<string> names = {"a1a", "ijcnn1"};
 
-vector<int> trainSize = {1605, 49990, 40428967, 20242, 581012, 40000,
-                        990000, 99000, 9900, 990,
-                        99000, 99000,
-                        99000};
-vector<int> testSize = {30956, 91701, 4577464, 677399, -1, 10000,
-                        110000, 11000, 1100, 110,
-                        11000, 11000,
-                        11000};
-vector<int> featureNum = {123, 22, 1000000, 47236, 54, 300,
-                          50, 50, 50, 50,
-                          200, 1000,
-                          400};
+vector<int> trainSize = {1605, 49990};
+vector<int> testSize = {30956, 91701};
+vector<int> featureNum = {123, 22};
 
 string help_msg = "-l: max_num_leaf.\n-d: max_depth.\n-n: number of"\
                   "threads.\n-b: max_bin_size\n-l: max_num_leaf\n-e: min_node_size\n";
